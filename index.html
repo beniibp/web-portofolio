@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beni | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ANIMATED GRADIENT BACKGROUND -->
+    <div class="animated-bg"></div>
+
+   <!-- BACKGROUND EFFECT -->
+  <div class="bg-effect">
+    <span class="glow glow-1"></span>
+    <span class="glow glow-2"></span>
+    <span class="glow glow-3"></span>
+  </div>
+<div class="ambient-light"></div>
+<div class="cursor-light"></div>
+
+  <script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  document.querySelectorAll(
+    '.section, .exp-card, .project-card, .software-card'
+  ).forEach(el => observer.observe(el));
+</script>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-wrapper">
+
+    <!-- LEFT -->
+    <div class="hero-text">
+      <h1>Halo, Saya <span>Beni</span></h1>
+      <p class="role">Videographer & Graphic Designer</p>
+
+<div class="social-media">
+  <a href="https://instagram.com/beniibp" target="_blank" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://behance.net/benedicbongsu" target="_blank" aria-label="Behance">
+    <i class="fa-brands fa-behance"></i>
+  </a>
+  <a href="https://linkedin.com/in/benedictus-bongsu-110490333" target="_blank" aria-label="LinkedIn">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+</div>
+
+
+      <button class="btn" id="scrollBtn">Lihat Pengalaman ↓</button>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-visual">
+      <div class="photo-ring">
+        <img src="./assets/images/profile.jpeg" alt="Beni">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about">
+  <h2>Tentang Saya</h2>
+
+  <div class="about-text-only">
+    <p>
+      Saya <strong>Beni</strong>, seorang <strong>Videographer</strong> dan
+      <strong>Graphic Designer</strong> yang berfokus pada visual storytelling,
+      branding, serta konten kreatif yang komunikatif dan relevan.
+    </p>
+
+    <p>
+      Saya terbiasa mengerjakan produksi video, desain grafis,
+      dan konten digital baik untuk kebutuhan personal,
+      akademik, maupun klien.
+      Dalam setiap proyek, saya mengutamakan konsep,
+      kerapian visual, dan pesan yang jelas.
+    </p>
+
+    <p>
+      Saya menggunakan berbagai software industri seperti
+      Adobe Photoshop, Illustrator, InDesign,
+      Premiere Pro, dan DaVinci Resolve
+      untuk menghasilkan visual yang konsisten dan profesional.
+    </p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section class="section experience">
+  <h2>Pengalaman</h2>
+
+  <div class="experience-wrapper">
+
+<a href="projects/pkl-project.html" class="exp-card">
+  <span class="exp-year">Jul – Nov 2025</span>
+  <h3>PKL Graphic Designer</h3>
+  <p class="exp-place">Duabelas Communication Indonesia</p>
+  <p class="exp-desc">
+    Mengelola desain visual, konten branding,
+    dan kebutuhan grafis klien selama PKL.
+  </p>
+
+  <span class="exp-link">
+    Lihat Project →
+  </span>
+</a>
+
+    <div class="exp-card">
+      <span class="exp-year">2024 – Sekarang</span>
+      <h3>Freelancer Videography</h3>
+      <p class="exp-place">Independent</p>
+      <p class="exp-desc">
+        Produksi video dokumentasi, event,
+        dan konten kreatif untuk personal & klien.
+      </p>
+    </div>
+
+    <div class="exp-card">
+      <span class="exp-year">2025 – Sekarang</span>
+      <h3>Freelancer Designer</h3>
+      <p class="exp-place">Independent</p>
+      <p class="exp-desc">
+        Desain poster, sosial media, branding,
+        dan kebutuhan visual digital.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section software-skill">
+  <h2>Software Skill</h2>
+
+  <div class="software-wrapper">
+
+    <div class="software-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop">
+  <span>Photoshop</span>
+</div>
+
+<div class="software-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator">
+  <span>Illustrator</span>
+</div>
+
+<div class="software-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Adobe_InDesign_CC_icon.svg" alt="InDesign">
+  <span>InDesign</span>
+</div>
+
+<!-- PREMIERE PRO (FIX) -->
+<div class="software-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="Premiere Pro">
+  <span>Premiere Pro</span>
+</div>
+
+<!-- DAVINCI RESOLVE (FIX - SVG OFFICIAL STYLE) -->
+<div class="software-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg" alt="DaVinci Resolve">
+  <span>DaVinci Resolve</span>
+</div>
+
+<!-- CAPCUT (FIX - CLEAN LOGO) -->
+<div class="software-card">
+<img src="https://upload.wikimedia.org/wikipedia/id/3/36/CapCut_logo.png" alt="CapCut">
+  <span>CapCut</span>
+</div>
+
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project" class="project-section section">
+
+  <h2 class="section-title">Project</h2>
+
+  <div class="project-grid">
+    
+    <!-- VIDEOGRAPHY -->
+    <a href="./projects/videography.html" class="project-card">
+      <h3>Videography</h3>
+      <p>Video profile, cinematic, dokumentasi, dan konten kreatif.</p>
+    </a>
+
+    <!-- DESIGN -->
+    <a href="./projects/design.html" class="project-card">
+      <h3>Design Graphic & Cetak</h3>
+      <p>Poster, branding, layout cetak, dan kebutuhan visual.</p>
+    </a>
+
+    <!-- SOCIAL MEDIA -->
+    <a href="./projects/social-media.html" class="project-card">
+      <h3>Social Media Content</h3>
+      <p>Konten Instagram, Reels, feed design, dan short video.</p>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+    <p>© 2026 Beni. All Rights Reserved.</p>
+</footer>
+
+<div class="cursor-light"></div>
